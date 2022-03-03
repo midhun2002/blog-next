@@ -1,0 +1,94 @@
+.Nav{
+    background-color: rgb(37, 27, 103);
+    display: flex;
+    align-items:center;
+    padding : 10px 20px 10px 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 75px;
+    box-shadow: 1.7px 3.4px 3.4px hsl(0deg 0% 0% / 0.45);
+}
+.Nav1{
+    background-color: rgb(37, 27, 103);
+    display: flex;
+    align-items:center;
+    padding : 10px 20px 10px 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content:space-between;
+    box-shadow: 1.7px 3.4px 3.4px hsl(0deg 0% 0% / 0.45);
+}
+.myDetails{
+    /* background-color: greenyellow; */
+    display: flex;
+    column-gap: 10px;
+}
+.myphoto{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.myname{
+    font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: white;
+}
+.Searchbar{
+    /* background-color: green; */
+    display: flex;
+    height:40px;
+    flex : 2 2 auto;
+}
+.searchbar{
+    color: #4f5052;
+    border:none;
+    font-size: 15px;
+    flex : 1 2 auto;
+    padding-left : 10px;
+    box-shadow: 0.6px 1.1px 1.1px hsl(0deg 0% 0% / 0.48);
+}
+.searchbar:focus{
+    outline: none;
+}
+.links{
+    /* background-color: blue; */
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: flex-end;
+    flex : 0 1 500px;
+}
+.link{
+    background-color: rgb(37, 27, 103);;
+    font-size: 15px;
+    border: none;
+    padding : 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    cursor: pointer;
+    border-radius: 10%;
+}
+.link:hover{
+    border-bottom: 2px solid  #ee087b;
+    color:#ee087b;
+}
+.link:active{
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .links{
+        justify-content: space-between;
+    } 
+    .myphoto{
+       display:none; 
+    }
+    .myDetails{
+        width:100%;
+        justify-content:center;
+    }
+  }
+
