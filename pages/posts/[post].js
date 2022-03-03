@@ -4,6 +4,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import {marked} from 'marked'
 import Link from 'next/link'
+import Img from 'next/Img'
 import styles from '../../styles/Post.module.css'
 import Nav from '../../components/Nav.jsx'
 function Post({post,frontmatter,content}) {
@@ -12,7 +13,7 @@ function Post({post,frontmatter,content}) {
     <Nav toggle={1}/>
     <div className={styles.card}>
      <div className={styles.title}>{post}</div>
-     <img className={styles.postimage}src={frontmatter.cover_image}/>
+     <Img className={styles.postimage}src={frontmatter.cover_image}/>
      <div dangerouslySetInnerHTML={{__html: marked(content) }}></div>
     </div>
     </div>

@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Img from 'next/image'
 function Header({post,index}) {
   const {slug,metadata : {title,date,excerpt,readtime,tags,cover_image}} = post; 
   return (
     <div className={styles.card}>
 
-        <img src={cover_image} alt="Avatar" className={styles.blogimage}/>
+        <Img src={cover_image} alt="Avatar" className={styles.blogimage}/>
 
         <div className={styles.container}>
             <div className={styles.title}>{title}</div>
