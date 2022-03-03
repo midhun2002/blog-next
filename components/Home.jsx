@@ -9,8 +9,8 @@ function Home({posts}) {
         {
           posts.map((post,index)=>{
             return(
-            <Link href={`/blogs/${post.slug}`}>
-              <Header post={post} index={index}/>
+            <Link key={index} href={`/blogs/${post.slug}`}  passHref>
+              <Header key={index} post={post} index={index}/>
             </Link>
             )
           })         

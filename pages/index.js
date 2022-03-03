@@ -13,7 +13,7 @@ function App({posts}) {
   return (
     <div className={styles.App}>
       <Nav/>
-      <Link href="/"><Home posts={posts}/></Link>
+      <Link href="/"  passHref><Home posts={posts}/></Link>
       <Footer/>
     </div>
   )
