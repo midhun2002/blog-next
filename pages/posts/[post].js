@@ -12,7 +12,6 @@ function Post({post,frontmatter,content}) {
     <Nav toggle={1}/>
     <div className={styles.card}>
      <div className={styles.title}>{frontmatter.title}</div>
-     <img className={styles.postimage} src={frontmatter.cover_image} alt="post_image"/>
      <div dangerouslySetInnerHTML={{__html: marked(content) }}></div>
     </div>
     </div>
