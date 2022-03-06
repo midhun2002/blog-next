@@ -62,7 +62,7 @@ when a program is loaded into the memory.OS gives the resources for the program 
 1.Stack (local variabes,function params(temp variables))\
 2.heap(dynamically allocated memory)\
 3.Data(global and static)\
-4.Text(Program counter,register's data)\
+4.Text(Program counter,register's data)
 
 Text saves the contents of processors register and the value of Program counter
 
@@ -74,4 +74,22 @@ executed.
 registers are the storage elements in the cpu
 that helps to store program counter,temp vars and accumulators etc..
 
-<img src="/images/introduction-to-os/process_state.jpg" alt="drawing" width="100%"/>
+
+#### Process States
+A process passes mainly through five different states
+1.Start
+2.Ready
+3.Running
+4.Wait
+5.Terminated.
+
+<img src="/images/introduction-to-os/process_state.jpg" alt="Process_states" width="100%"/> 
+
+When Process goes through different states the its state must be preserved.Process Control Block(PCB) is a data structure maintained by Operating System for every Process.
+
+PCB stores the essential data to keep track  of a process when passes through different states.
+
+PCB stores process id,state,privilege,program counter,registers,Pointer to parents process,accounting,memory,scheduling and I/O information.
+
+<img src="/images/introduction-to-os/Process-Control-Block.jpg" alt="PCB" width="100%"/>
+
