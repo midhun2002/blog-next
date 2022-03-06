@@ -1,6 +1,13 @@
+---
+title: Introduction to Operating Systems.
+date : "Mar 6,2021"
+tags : ["Operating Systems"]
+readtime: 3 min read
+cover_image : '/images/introduction-to-os/OS_photo.jpg'
+excerpt : "Operating Systems is the most basic and important concept."
+---
 
 
-## Introduction to Operating Systems
 
 
 Lets discuss about the operating system and its functionalities….
@@ -59,4 +66,6 @@ when a program is loaded into the memory.OS gives the resources for the program 
 Text saves the contents of processors register and the value of Program counter
 
 ###### Program Counter: 
-![process_states](../public/images/introduction-to-os/process_state.jpg)
+Program counter stores the next instruction
+
+<img src="/images/introduction-to-os/process_state.jpg" alt="drawing" width="100%"/>
