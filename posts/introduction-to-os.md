@@ -59,10 +59,10 @@ When we run the program,the program code gets loaded into memory(RAM).Now it is 
 
 when a program is loaded into the memory.OS gives the resources for the program to run in the system.
 
-1.Stack (local variabes,function params(temp variables)).
-2.heap(dynamically allocated memory).
-3.Data(global and static)
-4.Text(Program counter,register's data).
+1.Stack (local variabes,function params(temp variables))\
+2.heap(dynamically allocated memory)\
+3.Data(global and static)\
+4.Text(Program counter,register's data)\
 
 Text saves the contents of processors register and the value of Program counter
 
