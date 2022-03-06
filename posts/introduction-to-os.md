@@ -4,7 +4,8 @@ date : "Mar 6,2021"
 tags : ["Operating Systems"]
 readtime: 3 min read
 cover_image : '/images/introduction-to-os/OS_photo.jpg'
-excerpt : "Operating Systems is the most basic and important concept."
+excerpt : "Operating Systems is the most basic and important concept in the field of
+Computer Science and Engineering."
 ---
 
 
@@ -13,7 +14,7 @@ excerpt : "Operating Systems is the most basic and important concept."
 Lets discuss about the operating system and its functionalities….
 
 
-#### What is an Operating System?
+### What is an Operating System?
 
 
 Operating System is a piece of software which acts as an interface between user applications and hard ware devices( CPU, ram, disk, I/0). In the early days in order to perform a task you need to load the code in machine language for every hardware device. If the task becomes complex, it requires multiple hard ware to access/write/read to complete the task. And what if there is an I/O operation…CPU remains idle until the I/O operation completes. What if there are multiple tasks which performs I/O operations…..It is distressing right?
@@ -21,7 +22,7 @@ Operating System is a piece of software which acts as an interface between user 
 
 Here comes the need of a logical entity which can manage the hardware and performs the tasks efficiently and correctly. That is called OPERATING SYSTEM. Operating systems provide convenience(easy to operate) and throughput(completes tasks very fast).Now lets discuss about the functionalities of the Operating system which made this software special.
 
-#### Functionalities of an Operating System
+### Functionalities of an Operating System
 
 
 Here are the list of main functionalities that OS provides….
@@ -51,7 +52,7 @@ Actually, this is a generalized Version of Operating System like our Computers a
 As you can see we Use VSCode,Chrome etc.. at the same time right? So how OS runs and manages the applications.Coming to that...
 In OS world we consider the applications tasks as process.
 
-#### What is Process ?
+### What is Process ?
 
 A process is the instance of a computer program that is being executed by one or many threads.
 When we run the program,the program code gets loaded into memory(RAM).Now it is the Process.
@@ -61,11 +62,16 @@ when a program is loaded into the memory.OS gives the resources for the program 
 1.Stack (local variabes,function params(temp variables)).
 2.heap(dynamically allocated memory).
 3.Data(global and static)
-4.Text()
+4.Text(Program counter,register's data).
 
 Text saves the contents of processors register and the value of Program counter
 
-###### Program Counter: 
-Program counter stores the next instruction
+#### Program Counter: 
+Program counter stores the memory address (RAM address) of the next instruction to be 
+executed.
+
+#### Registers:
+registers are the storage elements in the cpu
+that helps to store program counter,temp vars and accumulators etc..
 
 <img src="/images/introduction-to-os/process_state.jpg" alt="drawing" width="100%"/>

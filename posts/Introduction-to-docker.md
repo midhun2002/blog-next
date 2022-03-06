@@ -3,7 +3,7 @@ title: Introduction to Docker.
 date : "Mar 3,2021"
 tags : ["Docker"]
 readtime: 3 min read
-cover_image : '/images/blog1/img_avatar.png'
+cover_image : '/images/blog1/docker_logo.png'
 excerpt : "Docker is an open source container engine which is very powerful for deploying modern day apps.
 "
 ---
