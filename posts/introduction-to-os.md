@@ -54,8 +54,7 @@ In OS world we consider the applications tasks as process.
 
 ### What is Process ?
 
-A process is the instance of a computer program that is being executed by one or many threads.
-When we run the program,the program code gets loaded into memory(RAM).Now it is the Process.
+A process is the instance of a computer program that is being executed by one or many threads.When we run the program,the program code gets loaded into memory(RAM).Now it is the Process.
 
 when a program is loaded into the memory.OS gives the resources for the program to run in the system.
 
@@ -92,4 +91,23 @@ PCB stores the essential data to keep track  of a process when passes through di
 PCB stores process id,state,privilege,program counter,registers,Pointer to parents process,accounting,memory,scheduling and I/O information.
 
 <img src="/images/introduction-to-os/Process-Control-Block.jpg" alt="PCB" width="100%"/>
+
+
+
+
+### Process Scheduling
+
+Process Scheduling is the activity of Operating system that removes a particular process from the cpu and adds another process to get executed by the CPU by following a particular strategy.OS maintains
+these processes states through PCBs and process scheduling queues.There are mainly 3 queues as follows:
+
+1) Job Queue(contains all PCBs)
+2) Ready Queue(New processes always put in the queue)
+3) Running Queue(Processes executing by CPU)
+3) Device Queue(blocked due to unavailability of an I/O device)
+
+
+
+
+
+
 
